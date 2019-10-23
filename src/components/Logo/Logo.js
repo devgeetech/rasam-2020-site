@@ -1,7 +1,7 @@
 import React from 'react'
 
 import classes from './Logo.module.css'
-import rasLogo from '../../../content/logos/rasCOL.webp'
+import rasLogo from '../../../content/logos/rasBNW.webp'
 
 const logo = (props) => (
     <div className={classes.Logo}>
