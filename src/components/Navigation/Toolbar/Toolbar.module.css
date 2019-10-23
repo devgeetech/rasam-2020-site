@@ -8,11 +8,8 @@
     position: absolute;
     z-index: 10;
     display: flex;
-    /* width: 100vh; */
-    /* margin: auto; */
     align-items: center;
-    /* justify-content: center; */
-    transform: rotateZ(90deg);/* translateY(-15rem) translateX(3rem); */
+    transform: rotateZ(90deg);
     transform-origin: left top;
 }
 
@@ -40,13 +37,4 @@
     z-index: 90;
     flex-wrap: nowrap;
 }
-
-.Toolbar nav {
-    height: 100%;
-}
-
-.Logo {
-    display:inline;
-    height: 80%;
-}*/
 
