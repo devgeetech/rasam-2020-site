@@ -1,0 +1,47 @@
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*background-image: linear-gradient(220deg, #090909, #120E31);*/
+    /*background-image: linear-gradient(220deg,#000000, #212121)*/
+    background: -webkit-linear-gradient(bottom right, #000000, #2B2B2B);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+    margin-top: 64px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Glegoo|Playfair+Display&display=swap');
+
+.heading {
+    color: #FFFFE4;
+    /* top: 64px;
+    left: 48px; */
+    font-size: 5rem;
+    font-family: 'Playfair display';
+    letter-spacing: 0.1rem;
+    /* font-weight: 500; */
+}
+
+.thalluText{
+    width: 40%;
+    /* position: relative;
+    left: 48px; */
+    color: white;
+    opacity: 0.7;
+    font-size: 1.3rem;
+}
+
+
+
+

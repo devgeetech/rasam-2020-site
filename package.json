@@ -13,8 +13,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "compass-mixins": "^0.12.10",
     "gatsby": "^2.16.1",
+    "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-web-font-loader": "^1.0.4",
+    "node-sass": "^4.13.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },

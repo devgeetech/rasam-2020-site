@@ -7,9 +7,9 @@
     align-items: center;
     height: 100%;
     font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 900;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     /* transform: rotateZ(90deg) translateX(5rem) translateY(-3.5rem);  */
     /* transform-origin: left top; */
 }
