@@ -5,6 +5,7 @@ import Layout from '../components/hoc/Layout/Layout'
 import classes from '../styles/index.module.css'
 import HeroVideo from '../../content/vids/rasGli.mp4'
 
+
 const IndexPage = () => {
     return(
         <Layout>
