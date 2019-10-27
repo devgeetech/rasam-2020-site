@@ -22,11 +22,25 @@ body{
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 600px) {
+.mobVid {
+    display: none;
+}
+
+@media (max-width: 1200px) {
     .vid {
-        object-fit: cover;
-        max-width: 500px;
+        display: none;
     }
-} 
+    .mobVid{
+        display: inline-block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translate(-50%, -50%);
+    }
 
-
+}
