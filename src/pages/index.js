@@ -8,11 +8,13 @@ import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 
 
 function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
+    if (typeof window !== `undefined`){
+        const { innerWidth: width, innerHeight: height } = window;
+        return {
+            width,
+            height
+        };
+    }
   }
   
 function useWindowDimensions() {
