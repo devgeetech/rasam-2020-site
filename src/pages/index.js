@@ -35,14 +35,22 @@ import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 // }
 
 const IndexPage = () => {
-    // let HeroVid = HeroPCVid;
+    let HeroVid = null;
     // if (typeof window !== `undefined`){
     //     if(window.innerWidth<1200){
     //         HeroVid=HeroMobVid;
     //     }
     // }
 
-    const HeroVid = typeof window !== `undefined` ? window.innerWidth<1200? HeroMobVid : HeroPCVid : null;
+    useEffect(()=>{
+        if(window.innerWidth>=1200){
+            HeroVid=HeroPCVid;
+        }else{
+            HeroVid=HeroMobVid;
+        }
+    })
+
+    // const HeroVid = typeof window !== `undefined` ? window.innerWidth<1200? HeroMobVid : HeroPCVid : null;
 
     return(
         <Layout>
