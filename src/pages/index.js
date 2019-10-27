@@ -35,26 +35,27 @@ import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 // }
 
 const IndexPage = () => {
-    let HeroVid = null;
-    // if (typeof window !== `undefined`){
-    //     if(window.innerWidth<1200){
-    //         HeroVid=HeroMobVid;
-    //     }
-    // }
-
-    useEffect(()=>{
-        if(window.innerWidth>=1200){
-            HeroVid=HeroPCVid;
-        }else{
+    let HeroVid = HeroPCVid;
+    if (typeof window !== `undefined`){
+        console.log(window.innerWidth)
+        if(window.innerWidth<1200){
             HeroVid=HeroMobVid;
         }
-    })
+    }
+
+    // useEffect(()=>{
+    //     if(window.innerWidth>=1200){
+    //         HeroVid=HeroPCVid;
+    //     }else{
+    //         HeroVid=HeroMobVid;
+    //     }
+    // })
 
     // const HeroVid = typeof window !== `undefined` ? window.innerWidth<1200? HeroMobVid : HeroPCVid : null;
 
     return(
         <Layout>
-            <video className={classes.vid} width="1920" height="1080" autoplay="autoplay" loop muted="muted">
+            <video className={classes.vid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted">
                 <source src={HeroVid} type="video/mp4"/>
             </video>            
         </Layout>
