@@ -11,8 +11,8 @@ const IndexPage = () => {
     return(
         <Layout>
             <video className={classes.vid} width="1920" height="1080" autoplay="autoplay" loop muted="muted">
-                <source src={HeroVideo} type="video/mp4" media="(min-width: 1200px)"/>
-                <source src={HeroMobVid} type="video/mp4" media="(min-width: 320px)"/>
+                <source src={HeroVideo} type="video/mp4" media="screen and (min-width: 1200px)"/>
+                <source src={HeroMobVid} type="video/mp4" media="handheld and (min-width: 320px)"/>
             </video>            
         </Layout>
     )
