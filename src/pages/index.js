@@ -4,7 +4,7 @@ import Layout from '../components/hoc/Layout/Layout'
 
 import classes from '../styles/index.module.css'
 import HeroPCVid from '../../content/vids/rasGli.mp4'
-import HeroMobVid from '../../content/gif/LowRes.gif'
+import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 
 
 // let HeroVid = null;
@@ -56,10 +56,13 @@ const IndexPage = () => {
 
     return(
         <Layout>
-            <img src={HeroMobVid} className={classes.mobVid} alt="Rasam Video"></img>
+
             <video className={classes.vid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted">
                 <source src={HeroPCVid} type="video/mp4"/>
-            </video>            
+            </video>
+            <video className={classes.mobVid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted">
+                <source src={HeroMobVid} type="video/mp4"/>
+            </video>               
         </Layout>
     )
 } 
