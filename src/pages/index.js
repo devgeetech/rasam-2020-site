@@ -6,6 +6,7 @@ import classes from '../styles/index.module.css'
 import HeroPCVid from '../../content/vids/rasGli.mp4'
 import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 
+// let HeroVid = null;
 
 // function getWindowDimensions() {
 //     if (typeof window !== `undefined`){
@@ -34,13 +35,32 @@ import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 //     return windowDimensions;
 // }
 
+
+
 const IndexPage = () => {
-    let HeroVid = HeroPCVid;
-    if (typeof window !== `undefined`){
-        if(window.innerWidth<1200){
-            HeroVid=HeroMobVid;
+
+    const [HeroVid, setHeroVid] = useState(()=>{
+        if (typeof window !== `undefined`){
+            console.log(window.innerWidth)
+            if(window.innerWidth<1200){
+                return HeroMobVid;
+            }else{
+                return HeroPCVid;
+            }
         }
-    }
+    });
+    
+    // useEffect(()=> {
+    //     if (typeof window !== `undefined`){
+    //         console.log(window.innerWidth)
+    //         if(window.innerWidth<1200){
+    //             setHeroVid(HeroMobVid);
+    //         }else{
+    //             setHeroVid(HeroPCVid);
+    //         }
+    //     }
+    // }, [])
+
 
     return(
         <Layout>
