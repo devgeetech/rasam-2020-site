@@ -7,38 +7,37 @@ import HeroPCVid from '../../content/vids/rasGli.mp4'
 import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 
 
-function getWindowDimensions() {
-    if (typeof window !== `undefined`){
-        const { innerWidth: width, innerHeight: height } = window;
-        return {
-            width,
-            height
-        };
-    }
-  }
+// function getWindowDimensions() {
+//     if (typeof window !== `undefined`){
+//         const { innerWidth: width, innerHeight: height } = window;
+//         return {
+//             width,
+//             height
+//         };
+//     }
+//   }
   
-function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions()
-    );
+// function useWindowDimensions() {
+//     const [windowDimensions, setWindowDimensions] = useState(
+//       getWindowDimensions()
+//     );
   
-    useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
+//     useEffect(() => {
+//       function handleResize() {
+//         setWindowDimensions(getWindowDimensions());
+//       }
   
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
+//       window.addEventListener("resize", handleResize);
+//       return () => window.removeEventListener("resize", handleResize);
+//     }, []);
   
-    return windowDimensions;
-}
+//     return windowDimensions;
+// }
 
 const IndexPage = () => {
     let HeroVid = HeroPCVid;
     if (typeof window !== `undefined`){
-        const { height, width } = useWindowDimensions();
-        if(width<1200){
+        if(window.innerWidth<1200){
             HeroVid=HeroMobVid;
         }
     }
