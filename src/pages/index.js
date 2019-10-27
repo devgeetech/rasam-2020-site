@@ -37,21 +37,10 @@ import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 const IndexPage = () => {
     let HeroVid = HeroPCVid;
     if (typeof window !== `undefined`){
-        console.log(window.innerWidth)
         if(window.innerWidth<1200){
             HeroVid=HeroMobVid;
         }
     }
-
-    // useEffect(()=>{
-    //     if(window.innerWidth>=1200){
-    //         HeroVid=HeroPCVid;
-    //     }else{
-    //         HeroVid=HeroMobVid;
-    //     }
-    // })
-
-    // const HeroVid = typeof window !== `undefined` ? window.innerWidth<1200? HeroMobVid : HeroPCVid : null;
 
     return(
         <Layout>
