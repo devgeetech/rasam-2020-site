@@ -39,27 +39,18 @@ import HeroMobVid from '../../content/vids/rasGliMob.mp4'
 
 const IndexPage = () => {
 
-    const [HeroVid, setHeroVid] = useState(()=>{
+    const [HeroVid, setHeroVid] = useState(HeroMobVid);
+    
+    useEffect(()=> {
         if (typeof window !== `undefined`){
             console.log(window.innerWidth)
             if(window.innerWidth<1200){
-                return HeroMobVid;
+                setHeroVid(HeroMobVid);
             }else{
-                return HeroPCVid;
+                setHeroVid(HeroPCVid);
             }
         }
-    });
-    
-    // useEffect(()=> {
-    //     if (typeof window !== `undefined`){
-    //         console.log(window.innerWidth)
-    //         if(window.innerWidth<1200){
-    //             setHeroVid(HeroMobVid);
-    //         }else{
-    //             setHeroVid(HeroPCVid);
-    //         }
-    //     }
-    // }, [])
+    }, [])
 
 
     return(
