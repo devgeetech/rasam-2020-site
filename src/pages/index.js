@@ -35,10 +35,12 @@ function useWindowDimensions() {
 }
 
 const IndexPage = () => {
-    const { height, width } = useWindowDimensions();
     let HeroVid = HeroPCVid;
-    if(width<1200){
-        HeroVid=HeroMobVid;
+    if (typeof window !== `undefined`){
+        const { height, width } = useWindowDimensions();
+        if(width<1200){
+            HeroVid=HeroMobVid;
+        }
     }
     return(
         <Layout>
