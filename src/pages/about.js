@@ -1,18 +1,16 @@
 import React from 'react'
 
-import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 import Layout from '../components/hoc/Layout/Layout'
 import classes from '../styles/about.module.css'
 
-import webpBG from '../../content/images/webp/dance3.webp'
+
 import jpgBG from '../../content/images/jpg/dance3.jpg'
 
 const about = () => {
     return(
         <Layout>
-            {isWebpSupported() ? 
-                    <img src={webpBG} alt="Rasam BG" className={classes.BgIm}/> : <img src={jpgBG} alt="Rasam BG"/>}
+            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
             <div className={classes.grad}>
                 <div className={classes.content}>
                     <div className={classes.heading}>About</div>
