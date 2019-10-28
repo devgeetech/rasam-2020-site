@@ -1,16 +1,24 @@
 import React from 'react'
 
+import Image from 'react-image-webp';
 
 import Layout from '../components/hoc/Layout/Layout'
 import classes from '../styles/about.module.css'
 
 
 import jpgBG from '../../content/images/jpg/dance3.jpg'
+import webpBG from '../../content/images/webp/dance3.webp'
 
 const about = () => {
     return(
         <Layout>
-            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
+            <Image
+                src={jpgBG}
+                webp={webpBG}
+                className={classes.BgIm}
+                alt="Rasam BG"
+            />
+            {/* <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/> */}
             <div className={classes.grad}>
                 <div className={classes.content}>
                     <div className={classes.heading}>About</div>
