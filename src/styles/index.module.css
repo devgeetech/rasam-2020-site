@@ -8,7 +8,8 @@ body{
     line-height:1.5;
     color:#333;
     overflow: hidden;
-    background: url(../../content/bg/grbl.jpg)
+    background: black;
+    /* background: url(../../content/bg/grbl.jpg) */
 }
 
 .vid{

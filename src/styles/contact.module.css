@@ -1,0 +1,108 @@
+
+html {
+    padding:0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    /* background-image: linear-gradient(220deg, #090909, #120E31); */
+    /*background-image: linear-gradient(220deg,#000000, #212121)*/
+    /* background: -webkit-linear-gradient(bottom right, #000000, #2B2B2B); */
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+    /* margin-top: 64px; */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+.heading {
+    color: white;/*#FFFFE4;*/
+    /* top: 64px;
+    left: 48px; */
+    font-size: 5rem;
+    font-family: 'Playfair display';
+    letter-spacing: 0.1rem;
+    /* font-weight: 500; */
+    margin-top: 64px;
+}
+
+.thalluText{
+    width: 40%;
+    /* position: relative;
+    left: 48px; */
+    color: white;
+    font-size: 1.3rem;
+}
+
+.thalluMessage {
+    opacity: 0.9;
+}
+
+.grad {
+    position: fixed;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgb(3,1,27);
+    background: linear-gradient(90deg, rgba(3,1,27,1) 36%, rgba(9,9,121,0) 67%);
+    z-index: -90;
+}
+
+
+.BgIm {
+    margin-left: 20%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* max-width: 100%; */
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+} 
+
+.svgIc {
+    width:36px;
+    height:36px;
+    padding-right: 1rem;
+    opacity: 0.8;
+}
+
+
+.contDets {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    font-size: 1rem;
+}
+
+.contDet {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+.contDet a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.6;
+}
+
+.contDet :hover{
+    opacity: 0.9;
+}
