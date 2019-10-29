@@ -14,6 +14,7 @@ import insta from '../../content/icons/instaEd.svg'
 import twitter from '../../content/icons/twitterEd.svg'
 import youtube from '../../content/icons/youtubeEd.svg'
 import linkedin from '../../content/icons/linkedinEd.svg'
+import call from '../../content/icons/callEd.svg'
 
 
 const contact = () => {
@@ -36,6 +37,23 @@ const contact = () => {
                                 <a href="https://g.page/TheProvidenceCollege?share">Providence College of Engineering,
                                  Angadical South, Chengannur</a>
                             </div>
+
+
+                            <div className={classes.contDetCor}>
+                                {/* <img src={mail} alt="Mail icon" className={classes.svgIc}/> */}
+                                <p className={classes.contDetCorHead}>Rasam Co-ordinator</p>
+                                <p>Jobin Joy</p>
+                                <div className={classes.contDet}>
+                                    <a href="mailto:jobin.j@providence.edu.in">
+                                        <img src={mail} alt="Mail icon" className={classes.svgIcS}/>
+                                    </a>
+                                    <a href="tel:+919947374969">
+                                        <img src={call} alt="Call icon" className={classes.svgIcS}/>
+                                    </a>
+                                </div>
+                            </div>
+
+
                             <div className={classes.contDet}>
                                 <a href="http://facebook.com/theprovidencecollege">
                                     <img src={fb} alt="locpin" className={classes.svgIc}/>

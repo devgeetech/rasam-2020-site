@@ -77,6 +77,13 @@ body {
     opacity: 0.8;
 }
 
+.svgIcS {
+    width:32px;
+    height:32px;
+    padding-right: 1rem;
+    opacity: 0.8;
+}
+
 
 .contDets {
     margin-top: 3rem;
@@ -95,6 +102,8 @@ body {
 }
 
 
+
+
 .contDet a{
     transition: all 0.3s ease;
     text-decoration: none;
@@ -105,6 +114,26 @@ body {
 .contDet :hover{
     opacity: 0.9;
 }
+
+.contDetCor {
+    /* padding: 0.3rem 0; */
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contDetCorHead {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contDetCor p{
+    margin: 0.1rem;
+    opacity: 0.6;
+}
+
+
 
 @media (max-width: 600px) {
     .heading {
