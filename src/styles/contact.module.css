@@ -31,7 +31,7 @@ body {
     font-family: 'Playfair display';
     letter-spacing: 0.1rem;
     /* font-weight: 500; */
-    margin-top: 3.5rem;
+    margin-top: 4rem;
 }
 
 .thalluText{
@@ -138,7 +138,7 @@ body {
 @media (max-width: 640px) {
     .heading {
         font-size: 2.5rem;
-        margin-top: 8rem;
+        margin-top: 6rem;
     }
 
     .grad {
@@ -150,8 +150,6 @@ body {
         font-size: 0.8rem;
     }
 
-
-    
     .contDets {
         margin-top: 2rem;
     }
@@ -161,6 +159,7 @@ body {
     
     .heading {
         font-size: 3rem;
+        margin-top: 7rem;
     }
     
     .thalluText {
