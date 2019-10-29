@@ -16,6 +16,7 @@
     "compass-mixins": "^0.12.10",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
+    "gatsby-plugin-manifest": "^2.2.25",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.2.32",
