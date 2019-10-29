@@ -112,6 +112,10 @@ body {
         margin-top: 8rem;
     }
 
+    .grad {
+        background: linear-gradient(90deg, rgba(3,1,27,1) 29%, rgba(2,2,46,0.6477941518404237) 68%, rgba(2,2,57,0.24443280730260852) 100%);
+    }
+
     .thalluText {
         width: 80%;
     }

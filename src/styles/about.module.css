@@ -92,12 +92,29 @@ body {
 } 
 
 @media (max-width: 640px) {
+
+    body{
+        overflow: scroll;
+    }
+
     .heading {
         font-size: 3rem;
         margin-top: 8rem;
     }
 
+    .grad {
+        background: linear-gradient(90deg, rgba(3,1,27,1) 29%, rgba(2,2,46,0.6477941518404237) 68%, rgba(2,2,57,0.24443280730260852) 100%);
+    }
+
     .thalluText {
         width: 80%;
+        opacity: 0.7;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 640px) and (min-height: 641px) and (max-height: 830px) {
+    .thalluText {
+        font-size: 0.9rem;
     }
 }
