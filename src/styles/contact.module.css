@@ -32,7 +32,7 @@ body {
     font-family: 'Playfair display';
     letter-spacing: 0.1rem;
     /* font-weight: 500; */
-    margin-top: 64px;
+    margin-top: 4rem;
 }
 
 .thalluText{
@@ -105,4 +105,15 @@ body {
 
 .contDet :hover{
     opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 3rem;
+        margin-top: 8rem;
+    }
+
+    .thalluText {
+        width: 80%;
+    }
 }

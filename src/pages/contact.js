@@ -4,9 +4,6 @@ import React from 'react'
 import Layout from '../components/hoc/Layout/Layout'
 import classes from '../styles/contact.module.css'
 
-import Image from 'react-image-webp';
-
-
 import jpgBG from '../../content/images/jpg/vibe1.jpg'
 import webpBG from '../../content/images/webp/vibe1.webp'
 
@@ -22,18 +19,12 @@ import linkedin from '../../content/icons/linkedinEd.svg'
 const contact = () => {
     return(
         <Layout>
-            <Image
-                src={jpgBG}
-                webp={webpBG}
-                className={classes.BgIm}
-                alt="Rasam BG"
-            />
-            {/* <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/> */}
+            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
             <div className={classes.grad} />
             <div className={classes.content}>
                     <div className={classes.heading}>Contact Us</div>
                     <div className={classes.thalluText}>
-                        <p className={classes.thalluMessage}>Hi! got questions? Shoot.</p>
+                        <p className={classes.thalluMessage}>Hey there! got questions? Shoot.</p>
                         <div className={classes.contDets}>
                             <div className={classes.contDet}>
                                 <img src={mail} alt="Mail icon" className={classes.svgIc}/>

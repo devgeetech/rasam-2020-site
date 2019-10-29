@@ -18,9 +18,26 @@
     height: 100%;
 }
 
-@media (max-width: 499px) {
-    .DesktopOnly {
+@media (max-width: 600px) {
+    /* .DesktopOnly {
         display: none;
+    } */
+
+    .Logo {
+        display: none;
+        /* transform: rotateZ(0deg);
+        justify-self: flex-start; */
+    }
+
+    .Toolbar {
+        min-width: 100%;
+        right: 0;
+        justify-content: center;
+        flex-wrap: nowrap;
+        /* right:3rem; */
+        top: 1.5rem;
+        transform: rotateZ(0deg);
+        transform-origin: left top;
     }
 } 
 

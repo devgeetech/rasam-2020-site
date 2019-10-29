@@ -3,7 +3,8 @@
     padding: 0;
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* flex-direction: column; */
     align-items: center;
     height: 100%;
     font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,8 +15,9 @@
     /* transform-origin: left top; */
 }
 
-@media (min-width: 500px) {
+/* @media (min-width: 600px) {
     .NavigationItems {
         flex-flow: row;
+        width: 100%;
     }
-}
+} */
