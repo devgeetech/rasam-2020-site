@@ -96,11 +96,12 @@ body {
     body{
         overflow: scroll;
     }
-
+    
     .heading {
-        font-size: 3rem;
-        margin-top: 8rem;
+        font-size: 2.5rem;
+        margin-top: 6rem;
     }
+
 
     .grad {
         background: linear-gradient(90deg, rgba(3,1,27,1) 29%, rgba(2,2,46,0.6477941518404237) 68%, rgba(2,2,57,0.24443280730260852) 100%);
@@ -117,4 +118,10 @@ body {
     .thalluText {
         font-size: 0.9rem;
     }
+
+    .heading {
+        font-size: 3rem;
+        margin-top: 7rem;
+    }
+    
 }
