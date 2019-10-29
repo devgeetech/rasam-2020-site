@@ -19,7 +19,15 @@ const about = ({data}) => {
                 objectPosition="50% 50%" 
                 alt="Rasam BG" 
                 className={classes.BgIm}/> */}
-            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
+            {/* <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/> */}
+            <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350486/rasamImages/dance3_jyawmu.jpg" alt="Rasam BG" className={classes.BgIm}/>
+            {/* <div >
+                <picture>
+                    <img srcset="https://res.cloudinary.com/devgeetech/image/upload/v1572351885/rasamImages/dance3_nsybxq.webp" className={classes.BgIm}/>
+                    <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350486/rasamImages/dance3_jyawmu.jpg" alt="Rasam Image" className={classes.BgIm}/>
+                </picture>
+            </div> */}
+
             <div className={classes.grad} />
             <div className={classes.content}>
                 <div className={classes.heading}>About</div>

@@ -19,7 +19,8 @@ import linkedin from '../../content/icons/linkedinEd.svg'
 const contact = () => {
     return(
         <Layout>
-            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
+            {/* <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/> */}
+            <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350485/rasamImages/vibe1_ibwiux.jpg" alt="Rasam BG" className={classes.BgIm}/>
             <div className={classes.grad} />
             <div className={classes.content}>
                     <div className={classes.heading}>Contact Us</div>
