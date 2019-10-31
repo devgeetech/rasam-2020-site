@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql } from "gatsby"
 // import Img from "gatsby-image"
 import Img from "gatsby-image/withIEPolyfill"
@@ -6,11 +6,13 @@ import Img from "gatsby-image/withIEPolyfill"
 import Layout from '../components/hoc/Layout/Layout'
 import classes from '../styles/about.module.css'
 
-
+import play from '../../content/icons/playEd.svg'
 import jpgBG from '../../content/images/jpg/dance3.jpg'
 import webpBG from '../../content/images/webp/dance3.webp'
+import vidTh from '../../content/images/jpg/rasVidTh2.jpg'
 
 const about = ({data}) => {
+
     return(
         <Layout>
             {/* <Img 
@@ -31,16 +33,22 @@ const about = ({data}) => {
             <div className={classes.content}>
                 <div className={classes.heading}>About</div>
                 <div className={classes.thalluText}>
-                    <p>Rasam – An ultimate cultural extravaganza where young talents from across the
-                            country exhibit their artistic prowess in one daring event. An event which 
-                            can create immortal ripples of elegance in the cultural scene of the country.
-                            The cultural fest with an irresistible flair where talents are uncovered and 
-                            friendships are forged. A fest which promises unforgettable experiences and 
-                            glorious spectacles – 
-                            The unique days of your life which will be forever embedded in your memory. 
-                            Be a part of this carnival of dreams at Providence College of Engineering 
-                            on 7th &#38; 8th February, 2020.</p>
+                    <p>Rasam, the cultural phenomenon that redefined the standards for 
+                        techno-cultural fests, is back for its second edition. Experience 
+                        euphoria of the highest order as young talent from across the land 
+                        assemble to witness the exhibition of raw talent and the dawn of 
+                        new friendships. Embrace yourself in this epic adventure where 
+                        the spectacles lay endless and the memories you make, 
+                        lasts a lifetime. Join us on this grand escapade at Providence 
+                        College of Engineering on 7th &#38; 8th February 2020. 
+                        <br/><br/>Bring the madness. We’ve got the chaos.</p>
                 </div>
+                <a href="https://youtu.be/63qr9y0fh7c" rel="noopener noreferrer" target="_blank">
+                    <div className={classes.vid}>
+                        <img src={play} alt="play" className={classes.playBt} />
+                        <img src={vidTh} alt="Rasam aftermovie" className={classes.vidIm} />
+                    </div>
+                </a>
                 {/* <iframe 
                     width="560" 
                     height="315" 

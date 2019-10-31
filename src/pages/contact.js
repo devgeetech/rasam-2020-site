@@ -55,19 +55,19 @@ const contact = () => {
 
 
                             <div className={classes.contDet}>
-                                <a href="http://facebook.com/theprovidencecollege">
+                                <a href="http://facebook.com/theprovidencecollege" rel="noopener noreferrer" target="_blank">
                                     <img src={fb} alt="locpin" className={classes.svgIc}/>
                                 </a>
-                                <a href="http://twitter.com/providencece">
+                                <a href="http://twitter.com/providencece" rel="noopener noreferrer" target="_blank">
                                     <img src={twitter} alt="locpin" className={classes.svgIc}/>
                                 </a>
-                                <a href="http://instagram.com/providencece">
+                                <a href="http://instagram.com/providencece" rel="noopener noreferrer" target="_blank">
                                     <img src={insta} alt="locpin" className={classes.svgIc}/>
                                 </a>
-                                <a href="http://prvdnc.com/youtube">
+                                <a href="https://www.youtube.com/channel/UCAm705PUEV-Xq5lrE2Dn-fA" rel="noopener noreferrer" target="_blank">
                                     <img src={youtube} alt="locpin" className={classes.svgIc}/>
                                 </a>
-                                <a href="http://prvdnc.com/linkedin">
+                                <a href="https://www.linkedin.com/school/providencece/" rel="noopener noreferrer" target="_blank">
                                     <img src={linkedin} alt="locpin" className={classes.svgIc}/>
                                 </a>
                             </div>
