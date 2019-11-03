@@ -21,8 +21,8 @@ const about = ({data}) => {
                 objectPosition="50% 50%" 
                 alt="Rasam BG" 
                 className={classes.BgIm}/> */}
-            {/* <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/> */}
-            <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350486/rasamImages/dance3_jyawmu.jpg" alt="Rasam BG" className={classes.BgIm}/>
+            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
+            {/* <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350486/rasamImages/dance3_jyawmu.jpg" alt="Rasam BG" className={classes.BgIm}/> */}
             {/* <div >
                 <picture>
                     <img srcset="https://res.cloudinary.com/devgeetech/image/upload/v1572351885/rasamImages/dance3_nsybxq.webp" className={classes.BgIm}/>
@@ -44,9 +44,11 @@ const about = ({data}) => {
                         <br/><br/>Bring the madness. We’ve got the chaos.</p>
                 </div>
                 <a href="https://youtu.be/63qr9y0fh7c" rel="noopener noreferrer" target="_blank">
-                    <div className={classes.vid}>
-                        <img src={play} alt="play" className={classes.playBt} />
-                        <img src={vidTh} alt="Rasam aftermovie" className={classes.vidIm} />
+                    <div className={classes.vid}> 
+                        
+                            <img src={play} alt="play" className={classes.playBt} />
+                            <img src={vidTh} alt="Rasam aftermovie" className={classes.vidIm}/>
+                        
                     </div>
                 </a>
                 {/* <iframe 
@@ -65,16 +67,16 @@ const about = ({data}) => {
 
 export default about
 
-export const query = graphql`
-        query {
-            fileName: file(relativePath: { eq: "webp/dance3.webp" }) {
-                childImageSharp {
-                    fluid(maxWidth: 1920) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `
+// export const query = graphql`
+//         query {
+//             fileName: file(relativePath: { eq: "webp/dance3.webp" }) {
+//                 childImageSharp {
+//                     fluid(maxWidth: 1920) {
+//                     ...GatsbyImageSharpFluid
+//                     }
+//                 }
+//             }
+//         }
+//     `
 
 
