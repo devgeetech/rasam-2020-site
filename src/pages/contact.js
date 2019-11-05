@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from '../components/hoc/Layout/Layout'
 import classes from '../styles/contact.module.css'
@@ -16,11 +17,28 @@ import youtube from '../../content/icons/youtubeEd.svg'
 import linkedin from '../../content/icons/linkedinEd.svg'
 import call from '../../content/icons/callEd.svg'
 
+const BgIm = {
+    marginLeft: "20%",
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    maxHeight: "100%",
+    width: "auto",
+    // height: "auto",
+    zIndex: "-100",
+    transform: "translate(-50%, -50%)"
+};
 
-const contact = () => {
+
+const contact = ({data}) => {
     return(
         <Layout>
-            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
+            <Img 
+                fluid={data.vibe1.childImageSharp.fluid}
+                alt="Rasam BG"
+                style={{position: "absolute"}}
+                imgStyle={BgIm}/>
+            {/* <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/> */}
             {/* <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350485/rasamImages/vibe1_ibwiux.jpg" alt="Rasam BG" className={classes.BgIm}/> */}
             <div className={classes.grad} />
             <div className={classes.content}>
@@ -81,3 +99,15 @@ const contact = () => {
 }
 
 export default contact
+
+export const query = graphql`
+        query {
+            vibe1: file(relativePath: { eq: "jpg/vibe1.jpg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1920) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
+        }
+    `

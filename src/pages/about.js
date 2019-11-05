@@ -1,34 +1,42 @@
 import React, { useState } from 'react'
 import { graphql } from "gatsby"
-// import Img from "gatsby-image"
-import Img from "gatsby-image/withIEPolyfill"
+import Img from "gatsby-image"
+// import Img from "gatsby-image/withIEPolyfill"
 
 import Layout from '../components/hoc/Layout/Layout'
 import classes from '../styles/about.module.css'
 
 import play from '../../content/icons/playEd.svg'
-import jpgBG from '../../content/images/jpg/dance3.jpg'
-import webpBG from '../../content/images/webp/dance3.webp'
+// import jpgBG from '../../content/images/jpg/dance3.jpg'
+// import webpBG from '../../content/images/webp/dance3.webp'
 import vidTh from '../../content/images/jpg/rasVidTh2.jpg'
 
-const about = ({data}) => {
 
+const BgIm = {
+    marginLeft: "20%",
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    maxHeight: "100%",
+    width: "auto",
+    // height: "auto",
+    zIndex: "-100",
+    transform: "translate(-50%, -50%)"
+};
+
+
+const about = ({data}) => {
+ 
+    
     return(
         <Layout>
-            {/* <Img 
-                fluid={data.fileName.childImageSharp.fluid}
-                objectFit="cover"
-                objectPosition="50% 50%" 
-                alt="Rasam BG" 
-                className={classes.BgIm}/> */}
-            <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/>
+            <Img 
+                fluid={data.dance3.childImageSharp.fluid}
+                alt="Rasam BG"
+                style={{position: "absolute"}}
+                imgStyle={BgIm}/>
+            {/* <img src={jpgBG} alt="Rasam BG" className={classes.BgIm}/> */}
             {/* <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350486/rasamImages/dance3_jyawmu.jpg" alt="Rasam BG" className={classes.BgIm}/> */}
-            {/* <div >
-                <picture>
-                    <img srcset="https://res.cloudinary.com/devgeetech/image/upload/v1572351885/rasamImages/dance3_nsybxq.webp" className={classes.BgIm}/>
-                    <img src="https://res.cloudinary.com/devgeetech/image/upload/v1572350486/rasamImages/dance3_jyawmu.jpg" alt="Rasam Image" className={classes.BgIm}/>
-                </picture>
-            </div> */}
             <div className={classes.grad} />
             <div className={classes.content}>
                 <div className={classes.heading}>About</div>
@@ -45,10 +53,8 @@ const about = ({data}) => {
                 </div>
                 <a href="https://youtu.be/63qr9y0fh7c" rel="noopener noreferrer" target="_blank">
                     <div className={classes.vid}> 
-                        
                             <img src={play} alt="play" className={classes.playBt} />
                             <img src={vidTh} alt="Rasam aftermovie" className={classes.vidIm}/>
-                        
                     </div>
                 </a>
                 {/* <iframe 
@@ -67,16 +73,16 @@ const about = ({data}) => {
 
 export default about
 
-// export const query = graphql`
-//         query {
-//             fileName: file(relativePath: { eq: "webp/dance3.webp" }) {
-//                 childImageSharp {
-//                     fluid(maxWidth: 1920) {
-//                     ...GatsbyImageSharpFluid
-//                     }
-//                 }
-//             }
-//         }
-//     `
+export const query = graphql`
+        query {
+            dance3: file(relativePath: { eq: "jpg/dance3.jpg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1920) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
+        }
+    `
 
 
