@@ -25,14 +25,14 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.mobVid {
+/* .mobVid {
     display: none;
-}
+} */
 
 @media (max-width: 1200px) {
-    .vid {
+    /* .vid {
         display: none;
-    }
+    } */
     .mobVid{
         display: inline-block;
         position: fixed;

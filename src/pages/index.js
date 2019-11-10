@@ -20,6 +20,21 @@ const IndexPage = () => {
 
     // console.log(disp)
 
+    const disp = typeof window !== `undefined` ? 
+        window.innerWidth >1200 ?
+            <React.Fragment>
+                <video className={classes.vid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted" >
+                    <source src={HeroPCVidWebM} type="video/webm"/>
+                    <source src={HeroPCVid} type="video/mp4"/>
+                </video>
+            </React.Fragment> :
+            <React.Fragment>
+                <video className={classes.mobVid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted">
+                    <source src={HeroMobVidWebM} type="video/webm"/>
+                    <source src={HeroMobVid} type="video/mp4"/>
+                </video> 
+            </React.Fragment> : null;
+
     return(
         <React.Fragment>
             <Helmet>
@@ -27,19 +42,15 @@ const IndexPage = () => {
                 <title>RASAM</title>
             </Helmet>
             <Layout>
-                {/* {disp} */}
-                <video className={classes.vid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted" >
+                {disp}
+                {/* <video className={classes.vid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted" >
                     <source src={HeroPCVidWebM} type="video/webm"/>
                     <source src={HeroPCVid} type="video/mp4"/>
-                    {/* <source src="https://res.cloudinary.com/devgeetech/video/upload/v1572348265/rasam/rasGli_uvmds2.webm" type="video/webm"/>
-                    <source src="https://res.cloudinary.com/devgeetech/video/upload/v1572348265/rasam/rasGli_uvmds2.mp4" type="video/mp4"/> */}
                 </video>
                 <video className={classes.mobVid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted">
                     <source src={HeroMobVidWebM} type="video/webm"/>
                     <source src={HeroMobVid} type="video/mp4"/>
-                    {/* <source src="https://res.cloudinary.com/devgeetech/video/upload/v1572362690/rasam/rasGliMob_j0ot7p.webm" type="video/webm"/>
-                    <source src="https://res.cloudinary.com/devgeetech/video/upload/v1572362690/rasam/rasGliMob_j0ot7p.mp4" type="video/mp4"/> */}
-                </video>             
+                </video>              */}
             </Layout>
         </React.Fragment>
 
