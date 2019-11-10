@@ -45,7 +45,7 @@ const about = ({data}) => {
                         techno-cultural fests, is back for its 2nd edition in 2020. <br/><br/>Experience 
                         euphoria of the highest order as young talent from across the land 
                         assemble to witness the exhibition of raw talent and the dawn of 
-                        new friendships. Embrace yourself in this epic adventure where 
+                        new friendships. Immerse yourself into this epic adventure where 
                         the spectacles lay endless and the memories you make, 
                         lasts a lifetime. <br/><br/>Join us on this grand escapade at Providence 
                         College of Engineering on 7th &#38; 8th February 2020. 
