@@ -14,12 +14,6 @@ import HeroMobVidWebM from '../../content/vids/rasGliMob.webm'
 
 const IndexPage = () => {
 
-    // const [isLoading, toggleLoad] = useState(true);
-
-    // const disp = isLoading ? null : <Spinner/>;
-
-    // console.log(disp)
-
     const disp = typeof window !== `undefined` ? 
         window.innerWidth >1200 ?
             <React.Fragment>
@@ -43,14 +37,6 @@ const IndexPage = () => {
             </Helmet>
             <Layout>
                 {disp}
-                {/* <video className={classes.vid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted" >
-                    <source src={HeroPCVidWebM} type="video/webm"/>
-                    <source src={HeroPCVid} type="video/mp4"/>
-                </video>
-                <video className={classes.mobVid} width="1920" height="1080" autoPlay="autoPlay" loop muted="muted">
-                    <source src={HeroMobVidWebM} type="video/webm"/>
-                    <source src={HeroMobVid} type="video/mp4"/>
-                </video>              */}
             </Layout>
         </React.Fragment>
 

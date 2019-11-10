@@ -41,13 +41,13 @@ const about = ({data}) => {
             <div className={classes.content}>
                 <div className={classes.heading}>About</div>
                 <div className={classes.thalluText}>
-                    <p>Rasam, the cultural phenomenon that redefined the standards for 
-                        techno-cultural fests, is back for its second edition. Experience 
+                    <p>Rasam - the cultural phenomenon that redefined the standards for 
+                        techno-cultural fests, is back for its 2nd edition in 2020. <br/><br/>Experience 
                         euphoria of the highest order as young talent from across the land 
                         assemble to witness the exhibition of raw talent and the dawn of 
                         new friendships. Embrace yourself in this epic adventure where 
                         the spectacles lay endless and the memories you make, 
-                        lasts a lifetime. Join us on this grand escapade at Providence 
+                        lasts a lifetime. <br/><br/>Join us on this grand escapade at Providence 
                         College of Engineering on 7th &#38; 8th February 2020. 
                         <br/><br/>Bring the madness. We’ve got the chaos.</p>
                 </div>
