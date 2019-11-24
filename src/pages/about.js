@@ -47,7 +47,7 @@ const about = ({data}) => {
                         assemble to witness the exhibition of raw talent and the dawn of 
                         new friendships. Immerse yourself into this epic adventure where 
                         the spectacles lay endless and the memories you make, 
-                        lasts a lifetime. <br/><br/>Join us on this grand escapade at Providence 
+                        last a lifetime. <br/><br/>Join us on this grand escapade at Providence 
                         College of Engineering on 7th &#38; 8th February 2020. 
                         <br/><br/>Bring the madness. We’ve got the chaos.</p>
                 </div>
