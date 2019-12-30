@@ -39,7 +39,8 @@
     .Toolbar {
         min-width: 0;
         top: 42px;
-        right: -290px;
+        /* right: -290px; */
+        right: -370px;
         transform: rotateZ(90deg);
         transform-origin: left top;
     }

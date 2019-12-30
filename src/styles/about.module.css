@@ -19,7 +19,7 @@ body {
 .content{
     display: flex;
     flex-direction: column;
-    margin-left: 64px;
+    margin-left: 3rem;
     /* margin-top: 64px; */
 }
 
@@ -33,6 +33,7 @@ body {
     font-family: 'Playfair display';
     letter-spacing: 0.1rem;
     margin-top: 2.5rem;
+    /* margin-top: 1rem; */
     /* font-weight: 500; */
 }
 
@@ -60,7 +61,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     background: rgb(3,1,27);
-    background: linear-gradient(90deg, rgba(3,1,27,1) 36%, rgba(9,9,121,0) 67%);
+    background: linear-gradient(90deg, rgba(18, 18, 18, 1) 36%, rgba(9,9,121,0) 67%);
     z-index: -90;
 }
 
@@ -129,7 +130,8 @@ body {
     
     .heading {
         font-size: 2.5rem;
-        margin-top: 6rem;
+        /* margin-top: 6rem; */
+        margin-top: 2rem;
     }
 
     .vid{

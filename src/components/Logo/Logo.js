@@ -1,11 +1,16 @@
 import React from 'react'
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import classes from './Logo.module.css'
-import rasLogo from '../../../content/logos/rasBNW.png'
+import rasLogoRound from '../../../content/logos/rasBNW.png'
+import rasLogoTxt from '../../../content/logos/rasTxt.svg'
 
-const logo = ({data}) => {
+const logo = (props) => {
+    let rasLogo=rasLogoRound
+    if (props.im === 'txt')
+        rasLogo=rasLogoTxt
+
     return(
         <div className={classes.Logo}>
             <img src={rasLogo} alt="Rasam logo"/>

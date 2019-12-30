@@ -59,13 +59,23 @@ const contact = ({data}) => {
 
                             <div className={classes.contDetCor}>
                                 {/* <img src={mail} alt="Mail icon" className={classes.svgIc}/> */}
-                                <p className={classes.contDetCorHead}>Rasam Co-ordinator</p>
-                                <p>Jobin Joy</p>
+                                <p className={classes.contDetCorHead}>General Secretary</p>
+                                <p>Jibil G Abraham</p>
                                 <div className={classes.contDet}>
-                                    <a href="mailto:jobin.j@providence.edu.in">
+                                    <a href="mailto:jibil.prc16me021@student.providence.edu.in">
                                         <img src={mail} alt="Mail icon" className={classes.svgIcS}/>
                                     </a>
-                                    <a href="tel:+919947374969">
+                                    <a href="tel:+917560875764">
+                                        <img src={call} alt="Call icon" className={classes.svgIcS}/>
+                                    </a>
+                                </div>
+                                <p className={classes.contDetCorHead}>Cultural Secretary</p>
+                                <p>Gowrishankar M</p>
+                                <div className={classes.contDet}>
+                                    <a href="mailto:gowrishankar.prc16me019@student.providence.edu.in">
+                                        <img src={mail} alt="Mail icon" className={classes.svgIcS}/>
+                                    </a>
+                                    <a href="tel:+918301031626">
                                         <img src={call} alt="Call icon" className={classes.svgIcS}/>
                                     </a>
                                 </div>
@@ -73,13 +83,13 @@ const contact = ({data}) => {
 
 
                             <div className={classes.contDet}>
-                                <a href="http://facebook.com/theprovidencecollege" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.facebook.com/rasambyprovidence/" rel="noopener noreferrer" target="_blank">
                                     <img src={fb} alt="locpin" className={classes.svgIc}/>
                                 </a>
                                 <a href="http://twitter.com/providencece" rel="noopener noreferrer" target="_blank">
                                     <img src={twitter} alt="locpin" className={classes.svgIc}/>
                                 </a>
-                                <a href="http://instagram.com/providencece" rel="noopener noreferrer" target="_blank">
+                                <a href="http://instagram.com/rasam.by.providence" rel="noopener noreferrer" target="_blank">
                                     <img src={insta} alt="locpin" className={classes.svgIc}/>
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCAm705PUEV-Xq5lrE2Dn-fA" rel="noopener noreferrer" target="_blank">

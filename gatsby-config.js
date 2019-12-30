@@ -4,14 +4,23 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+require('dotenv').config()
+
 module.exports = {
   plugins: [
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Raleway', 'Montserrat']
+          families: ['Raleway', 'Montserrat', 'Open Sans', 'Poppins']
         }
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
