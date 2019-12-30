@@ -65,7 +65,7 @@ const contact = ({data}) => {
 
                                 <div className={classes.contDetCor}>
                                     {/* <img src={mail} alt="Mail icon" className={classes.svgIc}/> */}
-                                    <p className={classes.contDetCorHead}>General Secretary</p>
+                                    <p className={classes.contDetCorHead}>Festival Convenor</p>
                                     <p>Jibil G Abraham</p>
                                     <div className={classes.contDetPer}>
                                         <a href="mailto:jibil.prc16me021@student.providence.edu.in">
@@ -75,7 +75,7 @@ const contact = ({data}) => {
                                             <img src={call} alt="Call icon" className={classes.svgIcS}/>
                                         </a>
                                     </div>
-                                    <p className={classes.contDetCorHead}>Cultural Secretary</p>
+                                    <p className={classes.contDetCorHead}>Cultural Festival Coordinator</p>
                                     <p>Gowrishankar M</p>
                                     <div className={classes.contDetPer}>
                                         <a href="mailto:gowrishankar.prc16me019@student.providence.edu.in">

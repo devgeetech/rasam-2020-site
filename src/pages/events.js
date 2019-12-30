@@ -47,7 +47,7 @@ const events = ({data}) => {
                         <p className={classes.heroTitle}>EVENTS</p> 
                     </div>
                     <div className={classes.heroContSrch}>
-                        <div className={classes.heroContSrchIt}>Competitions</div>
+                        <div className={classes.heroContSrchIt}>Contests</div>
                         <div className={classes.heroContSrchIt}>Concerts</div>
                         <div className={classes.heroContSrchIt}>Workshops</div>
                     </div>
