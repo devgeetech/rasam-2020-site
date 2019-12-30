@@ -28,8 +28,6 @@ const BgIm = {
 
 
 const events = ({data}) => {
-    console.log(data)
-
     return(
         <React.Fragment>
             <Helmet>

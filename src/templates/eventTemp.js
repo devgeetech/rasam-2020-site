@@ -84,7 +84,6 @@ const BgIm = typeof window !== `undefined` ?
         } : BgImB : null;
 
 const eventTemp = props => {
-    console.log(props)
 
     return (
         <React.Fragment>
