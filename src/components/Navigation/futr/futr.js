@@ -15,6 +15,7 @@ import linkedin from '../../../../content/icons/linkedinEd.svg'
 
 
 const Futr = () => {
+    
     return(
         <div className={classes.ftWrap}>
             <div className={classes.ftCol}>
