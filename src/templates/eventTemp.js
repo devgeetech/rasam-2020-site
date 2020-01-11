@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
@@ -25,6 +25,7 @@ export const query = graphql`
         rules {
           json
         }
+        slug
         originalName
         regLink
       }
@@ -108,7 +109,7 @@ const eventTemp = props => {
                             <div className={classes.contTitle}>{props.data.contentfulCompetition.rasamName}</div>
                             <div className={classes.contSubTitle}>({props.data.contentfulCompetition.originalName})</div>
                             {documentToReactComponents(props.data.contentfulCompetition.description.json)}
-                            <a href='https://rasam.imfast.io/rasam%20rules.pdf' rel="noopener noreferrer" target="_blank" className={classes.rulesReg}>Rules &amp; Regulations</a>
+                            <Link to={`/events/${props.data.contentfulCompetition.slug}/rules`} className={classes.rulesReg}>Rules &amp; Regulations</Link>
                             <a href={props.data.contentfulCompetition.regLink} className={classes.regButtWrap} rel="noopener noreferrer" target="_blank">
                                 <div className={classes.regButtLink}>
                                     Register

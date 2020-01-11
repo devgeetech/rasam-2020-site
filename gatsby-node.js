@@ -24,4 +24,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
             }
         })
     })
+
+    const rulesReg = path.resolve('./src/templates/rulesReg.js')
+    res.data.allContentfulCompetition.edges.forEach((edge) => {
+        createPage({
+            component: rulesReg,
+            path: `/events/${edge.node.slug}/rules`,
+            context: {
+                slug: edge.node.slug
+            }
+        })
+    })
 }
